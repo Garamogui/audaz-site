@@ -70,7 +70,7 @@ export const Calculator = () => {
    <motion.h2 layout className="mb-10">Estime quanto é possível recuperar com o serviço de revisão tributária:</motion.h2>
 
    {isSubmitted ? (
-    <motion.div layout className="flex flex-col items-center w-full">
+    <motion.div layout className="flex flex-col items-center gap-3 w-full">
      <motion.h3
       layout
 
@@ -82,10 +82,19 @@ export const Calculator = () => {
       className="font-sans font-bold text-white text-lg"
      >Recuperação de Crédito estimada:</motion.h3>
      <Counter from={0} to={calculatedValue} />
+
+     <Button 
+      variant="golden"
+      className=""
+      onClick={() => setIsSubmitted(false)}
+     >Refazer Cálculo</Button>
     </motion.div>
    ) : (
 
-    <form
+    <motion.form
+     layout
+     initial={{ opacity: 0, y:-20 }}
+     animate={{ opacity: 1, y:0 }}
      className="flex flex-col w-full gap-4 "
      onSubmit={handleSubmit}
     >
@@ -169,7 +178,7 @@ export const Calculator = () => {
       type="submit"
       className="w-full text-black font-bold text-xl border-2 border-primary hover:bg-transparent hover:text-white"
      >Estimar Recuperação</Button>
-    </form>
+    </motion.form>
    )}
 
   </motion.section>
