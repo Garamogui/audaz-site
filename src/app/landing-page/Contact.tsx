@@ -9,7 +9,7 @@ export const Contact = () => {
 
     <div className='flex flex-col justify-center items-start'>
      <h3 className='flex items-center gap-3'><House /> Endereço:</h3>
-     <p className='ml-9'>Rua dos Bobos, nº 0</p>
+     <p className='ml-9 max-w-80'>Av. Dr. Cardoso de Melo, 1470 - Vila Olímpia, São Paulo - SP, 04548-005</p>
     </div>
 
     <div className='flex flex-col justify-center items-start'>

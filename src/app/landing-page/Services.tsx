@@ -1,6 +1,6 @@
 export const Services = () => {
   return (
-   <section className="px-20 gap-20">
+   <section className="px-20 gap-20 bg-secondary-foreground">
     <div className="flex flex-col gap-10">
      <h2>Nossos Serviços</h2>
      <div className="grid grid-cols-2 gap-6">

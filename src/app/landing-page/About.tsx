@@ -4,13 +4,13 @@ export const About = () => {
    <h2 className="text-6xl">Sobre a Empresa</h2>
    <div className="flex justify-around gap-3 ">
     <div className="flex w-1/2 flex-col gap-3">
-     <h3 className="text-3xl">Missão</h3>
-     <p className="text-xl"> Nossa missão é simplificar a gestão fiscal de nossos clientes, oferecendo soluções personalizadas e transparentes que garantem a conformidade legal e a otimização de recursos.</p>
+     <h3 className="text-3xl">Audaz</h3>
+     <p className="text-xl">Somos uma equipe de especialistas em direito tributário, dedicados a auxiliar empresas de todos os portes a otimizar sua carga tributária e garantir a segurança jurídica de seus negócios.</p>
     </div>
 
     <div className="flex w-1/2 flex-col  gap-3">
      <h3 className="text-3xl">Visão</h3>
-     <p className="text-xl"> Aspiramos a ser reconhecidos como a referência em serviços fiscais, construindo relações de longo prazo com nossos clientes, baseadas em confiança, expertise e resultados.</p>
+     <p className="text-xl">Entedemos que o sucesso de uma empresa de uma gestão financeira eficiente e estratégica. Nosso objetivo é ajudar você a ter mais controle sobre seus impostos e recursos, para que você possa se concentrar no que realmente importa: <strong>o crescimento do seu negócio.</strong></p>
     </div>
 
    </div>
