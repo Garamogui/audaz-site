@@ -66,7 +66,7 @@ export const Calculator = () => {
  }
 
  return (
-  <motion.section layout className="flex-col items-start bg-secondary ">
+  <motion.section layout className="flex-col items-start bg-secondary-foreground ">
    <motion.h2 layout className="mb-10">Estime quanto é possível recuperar com o serviço de revisão tributária:</motion.h2>
 
    {isSubmitted ? (
