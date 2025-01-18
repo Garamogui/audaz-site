@@ -5,24 +5,26 @@ import logo from "../../../public/audaz-logo.png";
 import {
  NavigationMenu,
  NavigationMenuContent,
- NavigationMenuIndicator,
+ //NavigationMenuIndicator,
  NavigationMenuItem,
  NavigationMenuLink,
  NavigationMenuList,
  NavigationMenuTrigger,
- NavigationMenuViewport,
+ //NavigationMenuViewport,
 } from "@/components/ui/navigation-menu"
 
 import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu"
 
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
+//import Link from "next/link";
 
 export const Header = () => {
  return (
   <header className="flex justify-between items-center bg-transparent backdrop-blur px-20 py-4 fixed w-full z-50 ">
    <Image
     src={logo}
+    width={160}
+    height={160}
     alt="Logo da Audaz"
     className="w-40"
    />

@@ -1,8 +1,6 @@
-import { About } from "./landing-page/About";
 import { Calculator } from "./landing-page/Calculator";
 import { Clients } from "./landing-page/Clients";
 import { Contact } from "./landing-page/Contact";
-import { FAQ } from "./landing-page/FAQ";
 import { Header } from "./landing-page/Header";
 import { Needs } from "./landing-page/Needs";
 import { Presentation } from "./landing-page/Presentation";

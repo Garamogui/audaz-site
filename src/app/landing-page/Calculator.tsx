@@ -14,7 +14,7 @@ import {
 import { useEffect, useRef, useState } from "react"
 
 type valueKind = 'real' | 'presumido';
-type segment = "supermercado" | "indústria" | "atacadista" | "varejista" | "concessionária" | "servicos" | "transportadora";
+//type segment = "supermercado" | "indústria" | "atacadista" | "varejista" | "concessionária" | "servicos" | "transportadora";
 
 
 export const Calculator = () => {
@@ -46,20 +46,40 @@ export const Calculator = () => {
   }
  }
 
-
- function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
-  setIsSubmitted(true)
-  e.preventDefault()
-  console.log('submit')
+function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  e.preventDefault();
+  setIsSubmitted(true);
+  console.log('submit');
 
   const formData = new FormData(e.currentTarget);
   const formObject = Object.fromEntries(formData.entries());
 
-  console.log(formObject)
+  console.log(formObject);
 
-  setCalculatedValue(valueRange * selections[valueKind][formObject.segment as segment])
+  const segmentKey = formObject.segment as string; // Type assertion to string
 
- }
+  // Check if the segmentKey is a valid key in selections[valueKind]
+  if (segmentKey in selections[valueKind]) {
+    // Use a type assertion to tell TypeScript that segmentKey is a valid key
+    setCalculatedValue(valueRange * selections[valueKind][segmentKey as keyof typeof selections[typeof valueKind]]);
+  } else {
+    console.error('Invalid segment selected');
+  }
+}
+
+ //function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+ // setIsSubmitted(true)
+ // e.preventDefault()
+ // console.log('submit')
+ //
+ // const formData = new FormData(e.currentTarget);
+ // const formObject = Object.fromEntries(formData.entries());
+ //
+ // console.log(formObject)
+ //
+ // setCalculatedValue(valueRange * selections[valueKind][formObject.segment as segment])
+ //
+ //}
 
  function handleValueKind(value: valueKind) {
   setValueKind(value)
