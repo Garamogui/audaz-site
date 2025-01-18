@@ -4,7 +4,7 @@ export const Schedule = () => {
    <img
     src="https://images.pexels.com/photos/5325103/pexels-photo-5325103.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     alt="Homem marcando consulta pelo computador"
-    className="h-full"
+    className="h-[90%] rounded-xl"
    />
    <div className=" flex flex-col items-start justify-around gap-2 w-1/2 ">
     <h2>Agende uma consulta:</h2>
