@@ -1,1 +1,1 @@
-![Mermaid diagram testing](./mermaid-diagram-testing.svg)
+![Mermaid diagram testing](./mermaid-flow-transparent.svg)
