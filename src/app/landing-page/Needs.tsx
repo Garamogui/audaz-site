@@ -1,6 +1,7 @@
 import { SquareCheckBig } from 'lucide-react';
 import article from '../../../public/article-businesses.png'
 import Image from "next/image";
+import { Button } from '@/components/ui/button';
 
 export const Needs = () => {
  return (
@@ -41,7 +42,25 @@ export const Needs = () => {
         <li className='flex items-center gap-2'><SquareCheckBig className='text-primary' /> Planejamento tributário para redução de impostos dentro da lei.</li>
         <li className='flex items-center gap-2'><SquareCheckBig className='text-primary' /> Orientação sobre benefícios fiscais aplicáveis ao negócio.</li>
        </ul>
+       <div className='w-full flex justify-end' >
+        <Button variant="outline" className='border-primary text-primary text-lg p-5' >Mais Detalhes</Button>
+       </div>
       </div>
+     </div>
+
+
+     <div className="bg-foreground  p-4 gap-2 flex flex-col">
+      <h4 className=" text-secondary text-3xl font-bold ">Revisão Fiscal e Recuperação de Tributos </h4>
+      <div className=''>
+       <ul>
+        <li className='flex items-center gap-2'><SquareCheckBig className='text-primary' /> Identificação de créditos tributários não aproveitados.</li>
+        <li className='flex items-center gap-2'><SquareCheckBig className='text-primary' /> Revisão de tributos pagos a maior ou indevidamente.</li>
+        <li className='flex items-center gap-2'><SquareCheckBig className='text-primary' /> Pedido de restituição ou compensação de valores.</li>
+       </ul>
+      </div>
+       <div className='w-full flex justify-end' >
+        <Button variant="outline" className='border-primary text-primary text-lg p-5' >Mais Detalhes</Button>
+       </div>
      </div>
 
      <div className="bg-foreground  p-4 gap-2 flex flex-col">
@@ -53,6 +72,37 @@ export const Needs = () => {
         <li className='flex items-center gap-2'><SquareCheckBig className='text-primary' /> Pedido de restituição ou compensação de valores.</li>
        </ul>
       </div>
+       <div className='w-full flex justify-end' >
+        <Button variant="outline" className='border-primary text-primary text-lg p-5' >Mais Detalhes</Button>
+       </div>
+     </div>
+
+     <div className="bg-foreground  p-4 gap-2 flex flex-col">
+      <h4 className=" text-secondary text-3xl font-bold ">Revisão Fiscal e Recuperação de Tributos </h4>
+      <div className=''>
+       <ul>
+        <li className='flex items-center gap-2'><SquareCheckBig className='text-primary' /> Identificação de créditos tributários não aproveitados.</li>
+        <li className='flex items-center gap-2'><SquareCheckBig className='text-primary' /> Revisão de tributos pagos a maior ou indevidamente.</li>
+        <li className='flex items-center gap-2'><SquareCheckBig className='text-primary' /> Pedido de restituição ou compensação de valores.</li>
+       </ul>
+      </div>
+       <div className='w-full flex justify-end' >
+        <Button variant="outline" className='border-primary text-primary text-lg p-5' >Mais Detalhes</Button>
+       </div>
+     </div>
+
+     <div className="bg-foreground  p-4 gap-2 flex flex-col">
+      <h4 className=" text-secondary text-3xl font-bold ">Revisão Fiscal e Recuperação de Tributos </h4>
+      <div className=''>
+       <ul>
+        <li className='flex items-center gap-2'><SquareCheckBig className='text-primary' /> Identificação de créditos tributários não aproveitados.</li>
+        <li className='flex items-center gap-2'><SquareCheckBig className='text-primary' /> Revisão de tributos pagos a maior ou indevidamente.</li>
+        <li className='flex items-center gap-2'><SquareCheckBig className='text-primary' /> Pedido de restituição ou compensação de valores.</li>
+       </ul>
+      </div>
+       <div className='w-full flex justify-end' >
+        <Button variant="outline" className='border-primary text-primary text-lg p-5' >Mais Detalhes</Button>
+       </div>
      </div>
 
     </div>
