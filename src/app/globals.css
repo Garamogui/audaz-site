@@ -58,6 +58,13 @@ p, a, li, ul, ol {
  @apply text-secondary text-lg font-light font-['Montserrat'] leading-8;
 }
 
+ol {
+ @apply list-decimal 
+}
+ul {
+ @apply list-disc 
+}
+
 section {
  @apply flex h-screen justify-center items-center px-40
 }

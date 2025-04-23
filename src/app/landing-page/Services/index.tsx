@@ -64,6 +64,27 @@ export const Services = () => {
      />
     </div>
    </div>
+
+   <h2>Metodologia</h2>
+
+   <ol className="flex flex-col items-start gap-2 w-full text-xl px-40  ">
+    <li>
+     <strong>Diagnóstico Fiscal:</strong> Coletamos e analisamos dados da sua empresa para identificar riscos e oportunidades de economia tributária.
+    </li>
+
+    <li>
+     <strong>Planejamento Estratégico:</strong> Criamos um plano fiscal personalizado, alinhado com as necessidades e objetivos do seu negócio.
+    </li>
+
+    <li>
+     <strong>Implementação de Soluções:</strong> Aplicamos as estratégias definidas, otimizando processos e garantindo conformidade fiscal.
+    </li>
+
+    <li>
+     <strong>Monitoramento e Ajustes:</strong> Acompanhamos continuamente sua situação tributária, ajustando as estratégias conforme necessário para manter sua empresa sempre competitiva.
+    </li>
+   </ol>
+
   </section>
  );
 };
