@@ -1,8 +1,3 @@
-import { SquareCheckBig } from 'lucide-react';
-import article from '../../../public/article-businesses.png'
-import Image from "next/image";
-import { Button } from '@/components/ui/button';
-
 export const Needs = () => {
  return (
 
