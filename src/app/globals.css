@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,11 +8,13 @@
 @keyframes appear{
   from {
   opacity: 0;
-  transform: translateX(-100px)
+  transform: translate(0,-20px);
+  transform: scale(.98);
+/*  transform: translateX(-100px)*/
   }
   to {
     opacity: 1;
-    transform: translateX(0px)
+    /*transform: translateX(0px)*/
   }
 }
 
@@ -32,6 +36,10 @@ section * {
   font-style: italic;
 }
 
+.goldenText {
+ @apply bg-goldenGradient text-transparent bg-clip-text
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -41,12 +49,17 @@ h1, h2, h3, h4, h5, h6 {
  @apply text-primary text-5xl font-dm-serif
 }
 
+strong {
+ @apply font-bold font-['Montserrat'];
+}
+
 p, a, li, ul, ol {
- @apply text-secondary text-lg
+ /*font-family: 'Montserrat', sans-serif;*/
+ @apply text-secondary text-lg font-light font-['Montserrat'] leading-8;
 }
 
 section {
- @apply flex h-screen justify-center items-center px-20
+ @apply flex h-screen justify-center items-center px-40
 }
 
 

@@ -4,10 +4,10 @@ import Link from "next/link";
 
 export const Presentation = () => {
  return (
-  <main className="flex flex-col justify-between p-10 px-20 pt-10 mb-[20rem] bg-secondary-foreground  bg-[url('/bg-hero-section.jpg')] bg-cover  ">
+  <main className="flex flex-col justify-between p-10 px-40 pt-10  bg-secondary-foreground  bg-[url('/bg-hero-section.jpg')] bg-cover  ">
    <div className="flex h-screen flex-col items-start justify-center gap-10">
     <h2 className="text-3xl text-white ">Mais de 25 anos impulsionando o crescimento das empresas</h2>
-    <h1 className="text-7xl"> Soluções  Fiscais Personalizadas para o seu Negócio.</h1>
+    <h1 className="text-7xl goldenText pb-1 "> Soluções  Fiscais Personalizadas para o seu Negócio.</h1>
     <p className="text-xl">Preserve o que é seu: menos importo, mais dinheiro no caixa.</p>
     <div className="flex gap-2 ">
 

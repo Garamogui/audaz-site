@@ -5,118 +5,50 @@ import { Button } from '@/components/ui/button';
 
 export const Needs = () => {
  return (
-  <section className="flex-col items-start gap-5 mb-[20rem] ">
-   <h2>Será que você está pagando muito imposto?</h2>
 
-   <div className="group grid grid-cols-2 items-center justify-center gap-5  rounded-white p-5 rounded-xl">
-    <Image
-     src={article}
-     alt=""
-     className="rounded-lg w-full flex hover:scale-[101%] duration-300 col-span-2"
-    />
+  <section className="flex-col items-center gap-5 h-full my-20 ">
+   <h2>Por que o Planejamento Fiscal é Essencial?</h2>
 
-    <div className="bg-foreground  p-4 gap-2 flex flex-col">
-     <h3 className="text-2xl text-secondary">Planejamento Tributário</h3>
-     <p>Muitas empresas pagam mais impostos do que deveria devido à falta de um planejamento tributário eficiente. Isso pode afetar diretamente o crescimento e a rentabilidade do seu negócio.</p>
-    </div>
+   <ol className='flex flex-col items-start gap-5 w-full text-xl list-decimal '>
+    <li className='text-xl'> <strong>Impacto nos Resultados Financeiros:</strong> Sem um planejamento fiscal adequado, empresas frequentemente realizam pagamentos indevidos ou excessivos de tributos, comprometendo o capital de giro e a capacidade de reinvestimento; </li>
+    <li className='text-xl'> <strong>Oportunidades Fiscais:</strong> A complexidade do sistema tributário brasileiro, com múltiplas normas e regimes, oferece alternativas legais de economia que, sem conhecimento técnico, passam despercebidas. Isso reduz a competitividade da empresa no médio e longo prazo; </li>
+    <li className='text-xl'> <strong> Consequências Legais e Financeiras:</strong>  Erros na gestão tributária podem gerar autuações, multas e passivos fiscais ocultos. Além do impacto financeiro direto, esses problemas comprometem a saúde contábil e a segurança jurídica da organização.</li>
+   </ol>
 
-    <div className="bg-foreground  p-4 gap-2 flex flex-col">
-     <h3 className="text-2xl text-secondary">Legislação Complexa</h3>
-     <p>O sistema tributário brasileiro é cheio de nuances e diferentes opções fiscais. Sem o devido conhecimento, os empresários acabam ignorando alternativas que poderiam reduzir sua carga tributária.</p>
-    </div>
-   </div>
+   <h2>Tenha um Planejamento Fiscal Eficiente</h2>
 
-   <h2>Como descobrir se estou pagando mais?</h2>
-   <p>Existem estratégias legais para reduzir impostos, recuperar valores pagos a mais e evitar muitas fiscais. O planejamento tributário é essencial para colocar sua empresa no caminho do crescimento caminho sustentável.</p>
+   <p className='text-3xl '>
+    Com as estratégias certas é possível reduzir impostos, recuperar valores pagos a mais e evitar multas fiscais sem comprometer a conformidade com as leis vigentes. Essas são algumas opções para transformar a carga tributária em uma vantagem financeira:
+   </p>
 
-   <h2>Temos a solução</h2>
+   <ul className='flex flex-col items-start gap-5 w-full text-xl list-disc '>
 
-   <div className='flex gap-4 justify-between'>
-    <div className=' flex flex-col gap-4'>
-     <h3 className='text-4xl mb-5'>Otimize sua tributação e impulsione seu crescimento:</h3>
-     <div className="bg-foreground  p-4 gap-2 flex flex-col">
-      <h4 className=" text-secondary text-3xl font-bold ">Consultoria Tributária</h4>
-      <div className=''>
-       <ul>
-        <li className='flex items-center gap-2'><SquareCheckBig className='text-primary' /> Análise detalhada da carga tributária da empresa.</li>
-        <li className='flex items-center gap-2'><SquareCheckBig className='text-primary' /> Planejamento tributário para redução de impostos dentro da lei.</li>
-        <li className='flex items-center gap-2'><SquareCheckBig className='text-primary' /> Orientação sobre benefícios fiscais aplicáveis ao negócio.</li>
-       </ul>
-       <div className='w-full flex justify-end' >
-        <Button variant="outline" className='border-primary text-primary text-lg p-5' >Mais Detalhes</Button>
-       </div>
-      </div>
-     </div>
+    <li className='text-xl'>
+     <strong>Revisão de Alíquotas e Benefícios Fiscais:</strong> Análise de aplicação de alíquotas e a elegibilidade para benefícios fiscais, garantindo que a empresa não pague mais do que o devido.
+    </li>
 
+    <li className='text-xl'>
+     <strong>Estruturação Fiscal:</strong> Reestruturação de operações comerciais para aproveitar as melhores práticas fiscais, o que pode incluir a mudança de jurisdições fiscais dentro do país.
+    </li>
 
-     <div className="bg-foreground  p-4 gap-2 flex flex-col">
-      <h4 className=" text-secondary text-3xl font-bold ">Revisão Fiscal e Recuperação de Tributos </h4>
-      <div className=''>
-       <ul>
-        <li className='flex items-center gap-2'><SquareCheckBig className='text-primary' /> Identificação de créditos tributários não aproveitados.</li>
-        <li className='flex items-center gap-2'><SquareCheckBig className='text-primary' /> Revisão de tributos pagos a maior ou indevidamente.</li>
-        <li className='flex items-center gap-2'><SquareCheckBig className='text-primary' /> Pedido de restituição ou compensação de valores.</li>
-       </ul>
-      </div>
-       <div className='w-full flex justify-end' >
-        <Button variant="outline" className='border-primary text-primary text-lg p-5' >Mais Detalhes</Button>
-       </div>
-     </div>
+    <li className='text-xl'>
+     <strong>Compensação de Créditos Tributários:</strong> Avaliação de créditos e incentivos fiscais aplicáveis que podem ser compensados contra obrigações tributárias — reduzindo o montante total devido.
+    </li>
 
-     <div className="bg-foreground  p-4 gap-2 flex flex-col">
-      <h4 className=" text-secondary text-3xl font-bold ">Revisão Fiscal e Recuperação de Tributos </h4>
-      <div className=''>
-       <ul>
-        <li className='flex items-center gap-2'><SquareCheckBig className='text-primary' /> Identificação de créditos tributários não aproveitados.</li>
-        <li className='flex items-center gap-2'><SquareCheckBig className='text-primary' /> Revisão de tributos pagos a maior ou indevidamente.</li>
-        <li className='flex items-center gap-2'><SquareCheckBig className='text-primary' /> Pedido de restituição ou compensação de valores.</li>
-       </ul>
-      </div>
-       <div className='w-full flex justify-end' >
-        <Button variant="outline" className='border-primary text-primary text-lg p-5' >Mais Detalhes</Button>
-       </div>
-     </div>
+    <li className='text-xl'>
+     <strong>Utilização de Prejuízos Fiscais:</strong> Aproveito de prejuízos fiscais acumulados para abater nos lucros futuros.
+    </li>
 
-     <div className="bg-foreground  p-4 gap-2 flex flex-col">
-      <h4 className=" text-secondary text-3xl font-bold ">Revisão Fiscal e Recuperação de Tributos </h4>
-      <div className=''>
-       <ul>
-        <li className='flex items-center gap-2'><SquareCheckBig className='text-primary' /> Identificação de créditos tributários não aproveitados.</li>
-        <li className='flex items-center gap-2'><SquareCheckBig className='text-primary' /> Revisão de tributos pagos a maior ou indevidamente.</li>
-        <li className='flex items-center gap-2'><SquareCheckBig className='text-primary' /> Pedido de restituição ou compensação de valores.</li>
-       </ul>
-      </div>
-       <div className='w-full flex justify-end' >
-        <Button variant="outline" className='border-primary text-primary text-lg p-5' >Mais Detalhes</Button>
-       </div>
-     </div>
+    <li className='text-xl'>
+     <strong>Defesa em Autuações Fiscais:</strong> Empresas de direito tributário podem representar sua empresa em autuações e disputas fiscais defendendo seus direitos e buscando minimizar qualquer impacto financeiro.
+    </li>
 
-     <div className="bg-foreground  p-4 gap-2 flex flex-col">
-      <h4 className=" text-secondary text-3xl font-bold ">Revisão Fiscal e Recuperação de Tributos </h4>
-      <div className=''>
-       <ul>
-        <li className='flex items-center gap-2'><SquareCheckBig className='text-primary' /> Identificação de créditos tributários não aproveitados.</li>
-        <li className='flex items-center gap-2'><SquareCheckBig className='text-primary' /> Revisão de tributos pagos a maior ou indevidamente.</li>
-        <li className='flex items-center gap-2'><SquareCheckBig className='text-primary' /> Pedido de restituição ou compensação de valores.</li>
-       </ul>
-      </div>
-       <div className='w-full flex justify-end' >
-        <Button variant="outline" className='border-primary text-primary text-lg p-5' >Mais Detalhes</Button>
-       </div>
-     </div>
+   </ul>
 
-    </div>
-
-    <img
-     src="https://images.pexels.com/photos/4427908/pexels-photo-4427908.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-     alt="Homens negociando"
-     className=' w-1/4  bg-cover rounded-lg'
-    />
-
-   </div>
-
+   <p className='text-3xl '>
+    Com um planejamento tributário eficiente e personalizado, sua empresa terá aumento no fluxo de caixa, melhoria na rentabilidade, minimização de riscos, estabilidade e segurança.
+   </p>
 
   </section>
  )
 }
-

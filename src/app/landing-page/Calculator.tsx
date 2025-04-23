@@ -90,7 +90,7 @@ function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
    <motion.h2 layout className="mb-10">Estime quanto é possível recuperar com o serviço de revisão tributária:</motion.h2>
 
    {isSubmitted ? (
-    <motion.div layout className="flex flex-col items-center gap-3 w-full">
+    <motion.div layout className="flex w-full flex-col items-center gap-3">
      <motion.h3
       layout
 
@@ -99,7 +99,7 @@ function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
       animate={{ opacity: 1, y:0}}
 
 
-      className="font-sans font-bold text-white text-lg"
+      className="font-sans text-lg font-bold text-white"
      >Recuperação de Crédito estimada:</motion.h3>
      <Counter from={0} to={calculatedValue} />
 
@@ -115,11 +115,11 @@ function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
      layout
      initial={{ opacity: 0, y:-20 }}
      animate={{ opacity: 1, y:0 }}
-     className="flex flex-col w-full gap-4 "
+     className="flex w-full flex-col gap-4 "
      onSubmit={handleSubmit}
     >
      <div className="flex justify-between ">
-      <div className="flex flex-col w-1/3 items-start justify-center gap-4">
+      <div className="flex w-1/3 flex-col items-start justify-center gap-4">
        <h3 className="text-2xl text-white">Lucro real ou presumido?</h3>
        <div className="flex w-full gap-2">
         <div className="flex w-1/2">
@@ -132,7 +132,7 @@ function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
           onChange={() => handleValueKind('real')}
          />
          <label
-          className="flex w-full items-center justify-center rounded-lg border-2 border-primary bg-transparent p-3 text-xl text-white transition-all duration-300 peer-checked:bg-goldenGradient  peer-checked:text-black "
+          className="flex w-full items-center justify-center rounded-lg border-2 border-primary bg-transparent p-3 text-xl text-white transition-all duration-300 peer-checked:bg-primary  peer-checked:text-black "
           htmlFor="real"
          >Real</label>
         </div>
@@ -147,14 +147,14 @@ function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
           onChange={() => handleValueKind('presumido')}
          />
          <label
-          className="flex w-full items-center justify-center rounded-lg border-2 border-primary bg-transparent p-3 text-xl text-white transition-all duration-300 peer-checked:bg-goldenGradient  hover:brightness-105 peer-checked:text-black "
+          className="flex w-full items-center justify-center rounded-lg border-2 border-primary bg-transparent p-3 text-xl text-white transition-all duration-300 peer-checked:bg-primary  peer-checked:text-black "
           htmlFor="presumido"
          >Presumido</label>
         </div>
        </div>
       </div>
 
-      <div className="flex flex-col w-3/5 items-start justify-center gap-3">
+      <div className="flex w-3/5 flex-col items-start justify-center gap-3">
        <h3 className="text-2xl">Qual o segmento?</h3>
        <Select
         name="segment"
@@ -162,12 +162,15 @@ function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
        //id="valor-por-tipo"
        //className="flex p-full"
        >
-        <SelectTrigger className="w-full bg-white">
+        <SelectTrigger className="bg-gray-transparent w-full border-primary text-white">
          <SelectValue placeholder="-- Selecionar Segmento --" />
         </SelectTrigger>
-        <SelectContent >
+        <SelectContent 
+          className="border-primary bg-background" 
+         >
          {Object.keys(selections[valueKind]).map((key) => (
           <SelectItem
+            className="border-primary text-white"
            key={key}
            value={key}
           >{key}</SelectItem>
@@ -177,7 +180,7 @@ function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
       </div>
      </div>
 
-     <div className="flex flex-col w-full gap-4 ">
+     <div className="flex w-full flex-col gap-4 ">
       <div className="flex justify-between">
        <h3 className="text-2xl">Qual o faturamento anual?</h3>
        <h4 className="font-sans font-bold text-white  ">R$ {valueRange.toLocaleString('pt-BR')},00</h4>
@@ -185,7 +188,7 @@ function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
       </div>
       <input
        type="range"
-       className="w-full flex"
+       className="flex w-full"
        name="total"
        min={500000}
        max={1000000000}
@@ -196,7 +199,7 @@ function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
 
      <Button
       type="submit"
-      className="w-full text-black font-bold text-xl border-2 border-primary hover:bg-transparent hover:text-white"
+      className="w-full border-2 border-primary text-xl font-bold text-black hover:bg-transparent hover:text-white"
      >Estimar Recuperação</Button>
     </motion.form>
    )}
@@ -261,7 +264,7 @@ const Counter: React.FC<CounterProps> = ({ from, to }) => {
       transition={{ duration: 1 }}
       initial={{ opacity: 0, y:-20 }} 
       animate={{ opacity: 1, y:0}}
-      className="font-sans font-black text-white text-7xl"
+      className="font-sans text-7xl font-black text-white"
     />
   );
 };
