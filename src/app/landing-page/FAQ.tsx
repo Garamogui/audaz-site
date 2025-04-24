@@ -12,7 +12,7 @@ export const FAQ = () => {
    <Accordion
     type="single"
     collapsible
-    className="w-3/4 text-lg p-10 bg-secondary/50 rounded-lg "
+    className="w-3/4 text-lg p-10 m-10 bg-background/70 rounded-lg "
    >
     <AccordionItem value="item-1">
      <AccordionTrigger className="text-2xl">Quais são os principais serviços que vocês oferecem?</AccordionTrigger>
