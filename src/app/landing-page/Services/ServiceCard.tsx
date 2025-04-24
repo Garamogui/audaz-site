@@ -15,7 +15,7 @@ export const ServiceCard = ({ title, items, url, index }: ServiceCardProps) => {
   <div className="flex justify-start items-center w-full -mt-10">
 
    <div
-    className="w-28 h-80 bg-background text-white font-bold text-xl flex items-center justify-center"
+    className="w-28 h-80 bg-background text-foreground font-bold text-xl flex items-center justify-center"
     style={{
      clipPath: 'polygon(100% 75%, 50% 100%, 0% 75%, 0% 0%, 50% 25%, 100% 0%)',
     }}
