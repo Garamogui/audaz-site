@@ -11,16 +11,16 @@ export default {
  	extend: {
  		colors: {
  			background: {
- 				DEFAULT: '#1B1C1D',
- 				alt: '#282A2B'
+ 				DEFAULT: 'hsl(var(--bg))',
+ 				alt: 'hsl(var(--bg-alt))',
  			},
- 			foreground: '#3A3B3C',
+ 			foreground: 'hsl(var(--foreground))',
  			primary: {
- 				DEFAULT: '#F2E782',
+ 				DEFAULT: 'hsl(var(--primary))',
  				foreground: 'hsl(var(--primary-foreground))'
  			},
  			secondary: {
- 				DEFAULT: '#CFCBBF',
+ 				DEFAULT: 'hsl(var(--secondary))',
  				foreground: 'hsl(var(--secondary-foreground))'
  			},
  			card: {

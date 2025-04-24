@@ -2,7 +2,7 @@ import { ServiceCard } from "./ServiceCard";
 
 export const Services = () => {
  return (
-  <section className="px-20 py-20 h-full flex flex-col gap-20 bg-secondary-foreground">
+  <section className="px-20 py-20 h-full flex flex-col gap-20 bg-background-alt ">
    <h2>Temos a solução</h2>
    <div className="flex gap-4 justify-center ">
     <div className="flex flex-col  items-center w-full ">

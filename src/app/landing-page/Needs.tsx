@@ -1,8 +1,8 @@
 export const Needs = () => {
  return (
 
-  <section className="flex-col items-center gap-5 h-full my-20 ">
-   <h2>Por que o Planejamento Fiscal é Essencial?</h2>
+  <section className="flex-col items-center gap-5 h-full  py-20 ">
+   <h2 className="text-primary">Por que o Planejamento Fiscal é Essencial?</h2>
 
    <ol className='flex flex-col items-start gap-5 w-full text-xl list-decimal '>
     <li className='text-xl'> <strong>Impacto nos Resultados Financeiros:</strong> Sem um planejamento fiscal adequado, empresas frequentemente realizam pagamentos indevidos ou excessivos de tributos, comprometendo o capital de giro e a capacidade de reinvestimento; </li>

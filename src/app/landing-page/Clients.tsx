@@ -9,7 +9,7 @@ import {
 
 export const Clients = () => {
  return (
-  <section className="flex-col gap-10">
+  <section className="flex-col gap-10 ">
 
    <h2>Clientes Satisfeitos</h2>
 

@@ -86,7 +86,7 @@ function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
  }
 
  return (
-  <motion.section layout className="flex-col items-start bg-secondary-foreground ">
+  <motion.section layout className="flex-col items-start   bg-background-alt h-full py-20">
    <motion.h2 layout className="mb-10">Estime quanto é possível recuperar com o serviço de revisão tributária:</motion.h2>
 
    {isSubmitted ? (
@@ -104,7 +104,6 @@ function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
      <Counter from={0} to={calculatedValue} />
 
      <Button 
-      variant="golden"
       className=""
       onClick={() => setIsSubmitted(false)}
      >Refazer Cálculo</Button>
@@ -120,7 +119,7 @@ function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     >
      <div className="flex justify-between ">
       <div className="flex w-1/3 flex-col items-start justify-center gap-4">
-       <h3 className="text-2xl text-white">Lucro real ou presumido?</h3>
+       <h3 className="text-2xl text-primary">Lucro real ou presumido?</h3>
        <div className="flex w-full gap-2">
         <div className="flex w-1/2">
          <input
@@ -132,7 +131,7 @@ function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
           onChange={() => handleValueKind('real')}
          />
          <label
-          className="flex w-full items-center justify-center rounded-lg border-2 border-primary bg-transparent p-3 text-xl text-white transition-all duration-300 peer-checked:bg-primary  peer-checked:text-black "
+          className="flex w-full items-center justify-center rounded-lg border-2 border-primary bg-transparent p-3 text-xl  transition-all duration-300 peer-checked:bg-primary  peer-checked:text-background "
           htmlFor="real"
          >Real</label>
         </div>
@@ -147,7 +146,7 @@ function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
           onChange={() => handleValueKind('presumido')}
          />
          <label
-          className="flex w-full items-center justify-center rounded-lg border-2 border-primary bg-transparent p-3 text-xl text-white transition-all duration-300 peer-checked:bg-primary  peer-checked:text-black "
+          className="flex w-full items-center justify-center rounded-lg border-2 border-primary bg-transparent p-3 text-xl  transition-all duration-300 peer-checked:bg-primary  peer-checked:text-background "
           htmlFor="presumido"
          >Presumido</label>
         </div>
@@ -162,15 +161,15 @@ function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
        //id="valor-por-tipo"
        //className="flex p-full"
        >
-        <SelectTrigger className="bg-gray-transparent w-full border-primary text-white">
+        <SelectTrigger className="bg-gray-transparent w-full border-primary text-">
          <SelectValue placeholder="-- Selecionar Segmento --" />
         </SelectTrigger>
         <SelectContent 
-          className="border-primary bg-background" 
+          className="border-primary bg-background-alt text-primary" 
          >
          {Object.keys(selections[valueKind]).map((key) => (
           <SelectItem
-            className="border-primary text-white"
+            className="border-primary "
            key={key}
            value={key}
           >{key}</SelectItem>
@@ -183,7 +182,7 @@ function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
      <div className="flex w-full flex-col gap-4 ">
       <div className="flex justify-between">
        <h3 className="text-2xl">Qual o faturamento anual?</h3>
-       <h4 className="font-sans font-bold text-white  ">R$ {valueRange.toLocaleString('pt-BR')},00</h4>
+       <h4 className="font-sans font-bold text-primary  ">R$ {valueRange.toLocaleString('pt-BR')},00</h4>
         
       </div>
       <input
@@ -199,7 +198,7 @@ function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
 
      <Button
       type="submit"
-      className="w-full border-2 border-primary text-xl font-bold text-black hover:bg-transparent hover:text-white"
+      className="w-full border-2 border-primary text-xl font-bold  hover:bg-transparent hover:text-primary"
      >Estimar Recuperação</Button>
     </motion.form>
    )}
@@ -264,7 +263,7 @@ const Counter: React.FC<CounterProps> = ({ from, to }) => {
       transition={{ duration: 1 }}
       initial={{ opacity: 0, y:-20 }} 
       animate={{ opacity: 1, y:0}}
-      className="font-sans text-7xl font-black text-white"
+      className="font-sans text-7xl font-black "
     />
   );
 };

@@ -1,3 +1,4 @@
+import { GetInTouch } from "@/components/ui/getInTouch";
 import { Header } from "../landing-page/Header";
 
 export default function page() {
@@ -40,12 +41,7 @@ export default function page() {
             <li><strong>Recuperação de Créditos Tributários:</strong> Trabalho na recuperação de créditos resultantes de pagamentos indevidos ou a maior de tributos.</li>
           </ol>
 
-          <a
-            href="https://wa.me/5511977508117?text=Quero%20marcar%20uma%20consulta!"
-            className="bg-goldenGradient text-black font-bold p-3 rounded hover:scale-105 duration-300"
-          >
-            Marcar Consulta
-          </a>
+     <GetInTouch />
 
         </section>
       </article>

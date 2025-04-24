@@ -12,21 +12,21 @@ export const FAQ = () => {
    <Accordion
     type="single"
     collapsible
-    className="w-3/4 text-lg p-10 bg-secondary/10 rounded-lg "
+    className="w-3/4 text-lg p-10 bg-secondary/50 rounded-lg "
    >
     <AccordionItem value="item-1">
      <AccordionTrigger className="text-2xl">Quais são os principais serviços que vocês oferecem?</AccordionTrigger>
-     <AccordionContent className="text-secondary font-['Montserrat'] text-lg">Oferecemos uma gama completa de serviços fiscais, desde planejamento tributário e escrituração fiscal até consultoria especializada em diversos ramos do Direito Tributário.</AccordionContent>
+     <AccordionContent className="text-foreground font-['Montserrat'] text-lg">Oferecemos uma gama completa de serviços fiscais, desde planejamento tributário e escrituração fiscal até consultoria especializada em diversos ramos do Direito Tributário.</AccordionContent>
     </AccordionItem>
     <AccordionItem value="item-2 font-['Montserrat']">
      <AccordionTrigger className="text-2xl">Como a corretora tributária pode me ajudar a reduzir meus impostos?</AccordionTrigger>
-     <AccordionContent className="text-secondary font-['Montserrat'] text-lg">
+     <AccordionContent className="text-foreground font-['Montserrat'] text-lg">
       Através de um planejamento tributário detalhado, identificamos as melhores opções de regimes fiscais, benefícios e incentivos fiscais disponíveis, além de realizar a revisão das suas obrigações tributárias para evitar o pagamento de tributos indevidos.
      </AccordionContent>
     </AccordionItem>
     <AccordionItem value="item-3 text-lg">
      <AccordionTrigger className="text-2xl"> Quais impostos a corretora tributária pode ajudar a administrar? </AccordionTrigger>
-     <AccordionContent className="text-secondary font-['Montserrat'] text-lg">
+     <AccordionContent className="text-foreground font-['Montserrat'] text-lg">
       Podemos ajudar com todos os impostos, incluindo:
 
       <ul className="list-disc list-inside pl-4 mt-2 space-y-1">
