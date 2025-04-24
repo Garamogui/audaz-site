@@ -198,7 +198,7 @@ function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
 
      <Button
       type="submit"
-      className="w-full border-2 border-primary text-xl font-bold  hover:bg-transparent hover:text-primary"
+      className="w-full border-2 border-primary text-background text-xl font-bold  hover:bg-transparent hover:text-primary"
      >Estimar Recuperação</Button>
     </motion.form>
    )}
