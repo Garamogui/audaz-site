@@ -3,21 +3,11 @@ import { ServiceCard } from "./ServiceCard";
 export const Services = () => {
  return (
   <section className="px-20 py-20 h-full flex flex-col gap-20 bg-background-alt ">
-   <h2>Temos a solução</h2>
+   <h2>Nossos Serviços: Consultoria Tributária</h2>
    <div className="flex gap-4 justify-center ">
     <div className="flex flex-col  items-center w-full ">
-     <h3 className="text-4xl mb-20 text-center">Otimize sua tributação e impulsione seu crescimento:</h3>
+     <h3 className="text-4xl mb-20 w-full text-left"></h3>
 
-     <ServiceCard
-      title="Consultoria Tributária"
-      items={[
-       'Análise detalhada da carga tributária da empresa.',
-       'Planejamento tributário para redução de impostos dentro da lei.',
-       'Orientação sobre benefícios fiscais aplicáveis ao negócio.',
-      ]}
-      url="/consultoria-tributaria"
-      index={1}
-     />
 
      <ServiceCard
       title="Revisão Fiscal e Recuperação de Tributos"
@@ -27,7 +17,7 @@ export const Services = () => {
        'Pedido de restituição ou compensação de valores.',
       ]}
       url="/revisao-fiscal"
-      index={2}
+      index={1}
      />
 
      <ServiceCard
@@ -38,7 +28,7 @@ export const Services = () => {
        'Negociação e contestação de autuações fiscais.',
       ]}
       url="/defesa"
-      index={3}
+      index={2}
      />
 
      <ServiceCard
@@ -49,7 +39,7 @@ export const Services = () => {
        'Solução de pendências no SPED e outros sistemas fiscais',
       ]}
       url="/regularizacao"
-      index={4}
+      index={3}
      />
 
      <ServiceCard
@@ -60,7 +50,7 @@ export const Services = () => {
        'Consultoria e compliance fiscal.',
       ]}
       url="/bpo-fiscal"
-      index={5}
+      index={4}
      />
     </div>
    </div>

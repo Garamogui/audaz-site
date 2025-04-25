@@ -24,7 +24,7 @@ export const ServiceCard = ({ title, items, url, index }: ServiceCardProps) => {
    </div>
 
    <div className=" bg-transparent p-4 gap-2 flex flex-col w-full">
-    <h4 className="text-secondary text-3xl font-bold">{title}</h4>
+    <h4 className="text- text-3xl font-bold">{title}</h4>
     <ul className="flex flex-col gap-2">
      {items.map((item, index) => (
       <li key={index} className="flex items-center gap-2">

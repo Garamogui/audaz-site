@@ -12,7 +12,7 @@ export const Needs = () => {
 
    <h2>Tenha um Planejamento Fiscal Eficiente</h2>
 
-   <p className='text-3xl '>
+   <p className='text-xl '>
     Com as estratégias certas é possível reduzir impostos, recuperar valores pagos a mais e evitar multas fiscais sem comprometer a conformidade com as leis vigentes. Essas são algumas opções para transformar a carga tributária em uma vantagem financeira:
    </p>
 
@@ -40,7 +40,7 @@ export const Needs = () => {
 
    </ul>
 
-   <p className='text-3xl '>
+   <p className='text-xl '>
     Com um planejamento tributário eficiente e personalizado, sua empresa terá aumento no fluxo de caixa, melhoria na rentabilidade, minimização de riscos, estabilidade e segurança.
    </p>
 

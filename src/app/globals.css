@@ -47,8 +47,8 @@
   /* Tema 1 */
   .theme-1 {
     --bg: 0 0% 100%;
-    --bg-alt: 0 0% 97%;          /* ligeiramente mais escuro */
-    --primary: 11 52% 57%;
+    --bg-alt: 0 0% 97%;          
+    --primary: 17, 50%, 52%;
     --secondary: 45 14% 78%;
     --foreground: 179 83% 20%;
   }
@@ -56,17 +56,17 @@
   /* Tema 2 */
   .theme-2 {
     --bg: 168 19% 31%;
-    --bg-alt: 168 19% 27%;       /* 4% mais escuro */
-    --primary: 11 52% 57%;
-    --secondary: 45 14% 78%;
+    --bg-alt: 168 19% 27%;      
+    --primary:  45 14% 78%;
+    --secondary: 17, 50%, 52%;
     --foreground: 0 0% 100%;
   }
 
   /* Tema 3 */
   .theme-3 {
     --bg: 276 6% 17%;
-    --bg-alt: 276 6% 13%;        /* 4% mais escuro */
-    --primary: 11 52% 57%;
+    --bg-alt: 276 6% 13%;      
+    --primary: 17, 50%, 52%;
     --secondary: 45 14% 78%;
     --foreground: 0 0% 100%;
   }
@@ -74,7 +74,7 @@
   /* Tema 4 */
   .theme-4 {
     --bg: 340 4% 16%;
-    --bg-alt: 340 4% 12%;        /* 4% mais escuro */
+    --bg-alt: 340 4% 12%;     
     --primary: 0 0% 100%;
     --secondary: 45 14% 78%;
     --foreground: 0 0% 100%;
@@ -84,7 +84,7 @@
   .theme-5 {
     --bg: 340 4% 16%;
     --bg-alt: 340 4% 12%;
-    --primary: 11 52% 57%;
+    --primary: 17, 50%, 52%;
     --secondary: 45 14% 78%;
     --foreground: 0 0% 100%;
   }
@@ -92,8 +92,8 @@
   /* Tema 6 */
   .theme-6 {
     --bg: 288 16% 18%;
-    --bg-alt: 288 16% 14%;       /* 4% mais escuro */
-    --primary: 11 52% 57%;
+    --bg-alt: 288 16% 14%;   
+    --primary: 17, 50%, 52%;
     --secondary: 45 14% 78%;
     --foreground: 0 0% 100%;
   }
@@ -101,7 +101,7 @@
   /* Tema 7 */
   .theme-7 {
     --bg: 0 0% 100%;
-    --bg-alt: 0 0% 97%;          /* igual ao tema 1, leve contraste */
+    --bg-alt: 0 0% 97%;     
     --primary: 340 4% 16%;
     --secondary: 45 14% 78%;
     --foreground: 340 4% 16%;
@@ -136,7 +136,7 @@
 }
 
 section * {
- animation: appear  linear;
+ animation: appear 0.5s ease-in-out;
  animation-timeline: view();
  animation-range:  entry 0% cover 20%;
 }
@@ -157,13 +157,15 @@ section * {
  @apply bg-goldenGradient text-transparent bg-clip-text
 }
 
+
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Text */
 h1, h2, h3, h4, h5, h6 {
- @apply text-primary text-5xl font-dm-serif
+ @apply text-primary text-5xl font-dm-serif font-bold
 }
 
 strong {
@@ -183,7 +185,7 @@ ul {
 }
 
 section {
- @apply flex h-screen justify-center items-center px-40
+ @apply flex h-screen justify-center items-center px-40 
 }
 
 

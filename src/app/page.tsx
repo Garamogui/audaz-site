@@ -14,8 +14,12 @@ export default function Home() {
    <div className="flex flex-col">
     <Presentation />
     <Needs />
-    <Calculator />
-    <Clients />
+
+    {
+     // <Calculator />
+     // <Clients />
+    }
+
     <Services />
     <Contact />
     <Schedule />

@@ -4,7 +4,7 @@ import Image from "next/image";
 export const About = () => {
  return (
   <section className=" flex h-screen  flex-col justify-center items-start gap-10 bg-[url('/output.jpg')] bg-cover bg-no-repeat   ">
-   <h2 className="text-6xl mt-20 goldenText">Sobre Nós</h2>
+   <h2 className="text-6xl mt-20 ">Sobre Nós</h2>
    <div className="flex  justify-center gap-3 ">
     <div className="flex flex-col justify-around gap-3 ">
      <div className="flex w-2/3 flex-col gap-3">
@@ -26,7 +26,16 @@ export const About = () => {
      </div>
 
     </div>
-    <Image src={aboutUs} alt="" className="w-1/4" />
+    <div className="flex inset-0 w-2/3 relative h-full  ">
+
+     <Image
+      src={aboutUs}
+      alt=""
+      fill
+      className=" object-center rounded-lg   "
+     />
+
+    </div>
    </div>
   </section>
  )
