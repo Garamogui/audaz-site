@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ChartNoAxesCombined, HandCoins, UserRound } from "lucide-react";
+
 import Image from "next/image";
 import Link from "next/link";
 
@@ -29,7 +30,7 @@ export const Presentation = () => {
      Preserve o que é seu: menos imposto, mais dinheiro no caixa.
     </p>
     <div className="flex gap-2">
-     <Link href="/about">
+     <Link href="#Por-que">
       <Button className="p-6 text-lg text-background">Saiba Mais</Button>
      </Link>
      <a

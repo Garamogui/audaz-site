@@ -41,13 +41,13 @@ export const Header = () => {
      <NavigationMenuList>
       <NavigationMenuItem>
        <NavigationMenuTrigger>Sobre Nós</NavigationMenuTrigger>
-       <NavigationMenuContent className="bg-black border-red-400 ">
+       <NavigationMenuContent className=" border- ">
         <NavigationMenuLink className="bg-black">
          <div className="flex  p-4  gap-2">
           <div className="flex flex-col  justify-center items-center w-24 gap-2">
            <p className="text-white text-md ">Páginas</p>
-           <NavigationMenuLink className={navigationMenuTriggerStyle()} href="/">Principal</NavigationMenuLink>
-           <NavigationMenuLink className={navigationMenuTriggerStyle()} href="/about">Sobre</NavigationMenuLink>
+           <NavigationMenuLink className={navigationMenuTriggerStyle()} href="/#main">Principal</NavigationMenuLink>
+           <NavigationMenuLink className={navigationMenuTriggerStyle()} href="/#about">Sobre</NavigationMenuLink>
           </div>
 
           <div className="w-[2px] bg-background-alt h-[250px] " />
@@ -60,6 +60,7 @@ export const Header = () => {
            <NavigationMenuLink className={navigationMenuTriggerStyle()} href="/defesa">Defesa</NavigationMenuLink>
            <NavigationMenuLink className={navigationMenuTriggerStyle()} href="/regularizacao">Regularização Fiscal</NavigationMenuLink>
            <NavigationMenuLink className={navigationMenuTriggerStyle()} href="/bpo-fiscal">BPO Fiscal</NavigationMenuLink>
+
           </div>
 
          </div>
