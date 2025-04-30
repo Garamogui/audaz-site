@@ -41,14 +41,14 @@ export const Header = () => {
     <NavigationMenu className="flex gap-2">
      <NavigationMenuList>
       <NavigationMenuItem>
-       <NavigationMenuTrigger>Sobre Nós</NavigationMenuTrigger>
+       <NavigationMenuTrigger>Páginas</NavigationMenuTrigger>
        <NavigationMenuContent className=" border- ">
         <NavigationMenuLink className="bg-black">
          <div className="flex  p-4  gap-2">
           <div className="flex flex-col  justify-center items-center w-24 gap-2">
            <p className="text-white text-md ">Páginas</p>
            <NavigationMenuLink className={navigationMenuTriggerStyle()} href="#presentation">Principal</NavigationMenuLink>
-           <NavigationMenuLink className={navigationMenuTriggerStyle()} href="#about">Sobre</NavigationMenuLink>
+           <NavigationMenuLink className={navigationMenuTriggerStyle()} href="#about">Sobre Nós</NavigationMenuLink>
           </div>
 
           <div className="w-[2px] bg-background-alt h-[250px] " />
