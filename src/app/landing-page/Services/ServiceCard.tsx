@@ -9,7 +9,7 @@ interface ServiceCardProps {
  index: number;
 }
 
-export const ServiceCard = ({ title, items, url, index }: ServiceCardProps) => {
+export const ServiceCard = ({ title, items, url }: ServiceCardProps) => {
  return (
 
   <div className="flex justify-start items-center w-full -mt-10">
