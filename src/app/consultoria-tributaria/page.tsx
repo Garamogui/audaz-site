@@ -1,3 +1,4 @@
+import { GetInTouch } from "@/components/ui/getInTouch";
 import { Header } from "../landing-page/Header";
 
 export default function page() {
@@ -37,12 +38,7 @@ export default function page() {
             <li><strong>Apoio em Auditorias e Consultorias Externas:</strong> Assistência durante auditorias e consultorias, garantindo a conformidade e a representação adequada da empresa.</li>
           </ol>
 
-          <a
-            href="https://wa.me/5511977508117?text=Quero%20marcar%20uma%20consulta!"
-            className="bg-goldenGradient text-black font-bold p-3 rounded hover:scale-105 duration-300"
-          >
-            Fale Conosco
-          </a>
+     <GetInTouch />
         </section>
       </article>
     </>
