@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export const Presentation = () => {
  return (
-  <main className="relative flex flex-col justify-between bg-background-alt bg-cover h-screen">
+  <main id="presentation" className="relative flex flex-col justify-between bg-background-alt bg-cover h-screen">
    {/* container absoluto com dimensões herdadas de h-screen */}
    <div className="  z-10 flex items-center justify-center ">
     <Image

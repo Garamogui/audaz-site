@@ -7,7 +7,9 @@ import {
 
 export const FAQ = () => {
  return (
-  <section className='p-0 bg-[url("https://images.pexels.com/photos/7272207/pexels-photo-7272207.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")] '>
+  <section
+   id="faq"
+   className='p-0 bg-[url("https://images.pexels.com/photos/7272207/pexels-photo-7272207.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")] '>
 
    <div className="flex flex-col items-center justify-center gap-2 w-full h-full bg-background/80">
 

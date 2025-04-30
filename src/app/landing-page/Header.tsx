@@ -37,7 +37,8 @@ export const Header = () => {
 
    <div className="flex gap-2">
     <ThemeSwitcher />
-    <NavigationMenu>
+
+    <NavigationMenu className="flex gap-2">
      <NavigationMenuList>
       <NavigationMenuItem>
        <NavigationMenuTrigger>Sobre Nós</NavigationMenuTrigger>
@@ -46,20 +47,55 @@ export const Header = () => {
          <div className="flex  p-4  gap-2">
           <div className="flex flex-col  justify-center items-center w-24 gap-2">
            <p className="text-white text-md ">Páginas</p>
-           <NavigationMenuLink className={navigationMenuTriggerStyle()} href="/#main">Principal</NavigationMenuLink>
-           <NavigationMenuLink className={navigationMenuTriggerStyle()} href="/#about">Sobre</NavigationMenuLink>
+           <NavigationMenuLink className={navigationMenuTriggerStyle()} href="#presentation">Principal</NavigationMenuLink>
+           <NavigationMenuLink className={navigationMenuTriggerStyle()} href="#about">Sobre</NavigationMenuLink>
           </div>
 
           <div className="w-[2px] bg-background-alt h-[250px] " />
 
           <div className="flex flex-col  justify-center items-center w-48 gap-2">
-           <p className="text-white text-md ">Recursos</p>
+           <p className="text-white text-md ">Seções</p>
+
+           <NavigationMenuLink className={navigationMenuTriggerStyle()} href="#mvv">MVV</NavigationMenuLink>
+           <NavigationMenuLink className={navigationMenuTriggerStyle()} href="#services">Nossos Serviços</NavigationMenuLink>
+           <NavigationMenuLink className={navigationMenuTriggerStyle()} href="#metodologia">Metodologia</NavigationMenuLink>
+           <NavigationMenuLink className={navigationMenuTriggerStyle()} href="#faq">Perguntas Frequentes</NavigationMenuLink>
+
+
+
+          </div>
+
+         </div>
+
+
+        </NavigationMenuLink>
+       </NavigationMenuContent>
+      </NavigationMenuItem>
+
+
+
+     </NavigationMenuList>
+
+
+     <NavigationMenuList>
+      <NavigationMenuItem>
+       <NavigationMenuTrigger>Serviços</NavigationMenuTrigger>
+       <NavigationMenuContent className=" border- ">
+        <NavigationMenuLink className="bg-black">
+         <div className="flex  p-4  gap-2">
+
+          <div className="w-[2px] bg-background-alt h-[250px] " />
+
+          <div className="flex flex-col  justify-center items-center w-48 gap-2">
+           <p className="text-white text-md "> Recursos </p>
 
            <NavigationMenuLink className={navigationMenuTriggerStyle()} href="/consultoria-tributaria">Consultoria Tributária</NavigationMenuLink>
            <NavigationMenuLink className={navigationMenuTriggerStyle()} href="/revisao-fiscal">Revisão Fiscal</NavigationMenuLink>
            <NavigationMenuLink className={navigationMenuTriggerStyle()} href="/defesa">Defesa</NavigationMenuLink>
            <NavigationMenuLink className={navigationMenuTriggerStyle()} href="/regularizacao">Regularização Fiscal</NavigationMenuLink>
            <NavigationMenuLink className={navigationMenuTriggerStyle()} href="/bpo-fiscal">BPO Fiscal</NavigationMenuLink>
+
+
 
           </div>
 
@@ -78,7 +114,12 @@ export const Header = () => {
 
 
      </NavigationMenuList>
+
     </NavigationMenu>
+
+
+
+
    </div>
 
   </header>

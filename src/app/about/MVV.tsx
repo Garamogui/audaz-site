@@ -1,6 +1,6 @@
 export const MVV = () => {
   return (
-  <section className="bg-background-alt">
+  <section id="mvv" className="bg-background-alt">
    <div className="w-full flex flex-col justify-center items-center bg-background p-20 gap-10">
     <h2 className=" w-full">
      Missão, Visão e Valores
