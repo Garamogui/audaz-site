@@ -27,7 +27,7 @@ export const Presentation = () => {
      Soluções Fiscais Personalizadas para o seu Negócio.
     </h1>
     <p className="text-xl text-foreground">
-     Preserve o que é seu: menos imposto, mais dinheiro no caixa.
+     Menos imposto, mais dinheiro no caixa.
     </p>
     <div className="flex gap-2">
      <Link href="#Por-que">
