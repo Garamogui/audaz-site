@@ -3,7 +3,7 @@ import React from 'react'
 
 export const Contact = () => {
  return (
-  <section className=' h-full py-20 flex-col jutify-center items-start gap-10'>
+  <section id='contatos' className=' h-full py-20 flex-col jutify-center items-start gap-10'>
    <h2>Entre em Contato:</h2>
    <div className=' flex  w-full items-start justify-between'>
 

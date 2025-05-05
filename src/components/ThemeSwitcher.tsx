@@ -35,7 +35,7 @@ export default function ThemeSwitcher() {
    value={theme}
    onValueChange={(value) => setTheme(value)}
   >
-   <SelectTrigger className="w-48">
+   <SelectTrigger className="w-48 bg-background text-foreground">
     <SelectValue placeholder="Selecione o tema" />
    </SelectTrigger>
    <SelectContent>

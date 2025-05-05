@@ -19,15 +19,15 @@ export const Presentation = () => {
    </div>
 
    {/* conteúdo sobreposto */}
-   <div className="flex bg-background-alt/90 h-full p-10 px-40 z-10 flex-col items-start justify-center gap-10">
-    <h2 className="text-3xl text-foreground">
+   <div className="flex bg-foreground/90 h-full p-10 px-40 z-10 flex-col items-start justify-center gap-10">
+    <h2 className="text-3xl text-background">
      Mais de 25 anos impulsionando o crescimento das empresas
     </h2>
     <h1 className="text-7xl pb-1 text-primary">
-     Soluções Fiscais Personalizadas para o seu Negócio.
+     Soluções Fiscais Personalizadas para o seu Negócio
     </h1>
-    <p className="text-xl text-foreground">
-     Menos imposto, mais dinheiro no caixa.
+    <p className="text-xl text-background">
+     Menos imposto, mais dinheiro no caixa da sua empresa
     </p>
     <div className="flex gap-2">
      <Link href="#Por-que">
@@ -37,22 +37,22 @@ export const Presentation = () => {
       href="https://wa.me/5511977508117?text=Quero%20marcar%20uma%20consulta!"
      >
       <Button className="p-6 text-lg text-background">
-       Agende uma Consulta
+       Contatos
       </Button>
      </a>
     </div>
     <div className="flex justify-between w-full">
      <div className="flex flex-col items-center justify-center">
-      <UserRound className="size-10 text-foreground" />
-      <p>Garanta segurança jurídica</p>
+      <UserRound className="size-10 text-background" />
+      <p className="text-background">Garanta segurança jurídica</p>
      </div>
      <div className="flex flex-col items-center justify-center">
-      <HandCoins className="size-10 text-foreground" />
-      <p>Reduza Impostos Legalmente</p>
+      <HandCoins className="size-10 text-background" />
+      <p className="text-background">Reduza Impostos Legalmente</p>
      </div>
      <div className="flex flex-col items-center justify-center">
-      <ChartNoAxesCombined className="size-10 text-foreground" />
-      <p>Aumente Sua Margem de Lucro</p>
+      <ChartNoAxesCombined className="size-10 text-background" />
+      <p className="text-background">Aumente Sua Margem de Lucro</p>
      </div>
     </div>
    </div>

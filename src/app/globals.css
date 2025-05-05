@@ -94,7 +94,7 @@ section * {
   .theme-1 {
     --bg: 0 0% 100%;
     --bg-alt: 0 0% 97%;          
-    --primary: 17, 50%, 52%;
+    --primary: 17 50% 52%;
     --secondary: 45 14% 78%;
     --foreground: 179 83% 20%;
   }

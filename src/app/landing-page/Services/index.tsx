@@ -2,15 +2,16 @@ import { ServiceCard } from "./ServiceCard";
 
 export const Services = () => {
  return (
+    <>
 
-  <section id="services" className="px-20 py-20 h-full flex flex-col  bg-background ">
+  <section id="services" className="flex h-full flex-col bg-background px-20  py-20 ">
    <h2>Nossos Serviços: Consultoria Tributária</h2>
-   <div className="flex gap-4 justify-center ">
-    <div className="flex flex-col  items-center w-full ">
+   <div className="flex justify-center gap-4 ">
+    <div className="flex w-full  flex-col items-center ">
 
-     <h3 className="text-4xl mb-20 w-full text-left"></h3>
+     <h3 className="mb-20 w-full text-left text-4xl"></h3>
 
-     <div className="flex flex-col gap-20 w-full ">
+     <div className="flex w-full flex-col gap-20 ">
 
       <ServiceCard
        title="Revisão Fiscal e Recuperação de Tributos"
@@ -60,11 +61,11 @@ export const Services = () => {
     </div>
    </div>
 
-
-   <div id="metodologia"  className="flex flex-col items-center pt-20 justify-center gap-2 w-full h-full  ">
+  </section>
+  <section className="bg-background-alt flex flex-col items-center justify-center gap-2  ">
 
     <h2 >Metodologia</h2>
-    <ol className="flex flex-col items-start gap-2 w-full text-xl px-40  ">
+    <ol className="flex w-full flex-col items-start gap-2 px-40 text-xl   ">
      <li>
       <strong>Diagnóstico Fiscal:</strong> Coletamos e analisamos dados da sua empresa para identificar riscos e oportunidades de economia tributária.
      </li>
@@ -81,8 +82,10 @@ export const Services = () => {
       <strong>Monitoramento e Ajustes:</strong> Acompanhamos continuamente sua situação tributária, ajustando as estratégias conforme necessário para manter sua empresa sempre competitiva.
      </li>
     </ol>
-   </div>
+   
+   <div id="metodologia"  className=""></div>
 
   </section>
+    </>
  );
 };
